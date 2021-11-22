@@ -7,8 +7,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
 const mode = require('gulp-mode')();
-// const imageResize = require('gulp-image-resize');
+const imageResize = require('gulp-image-resize');
 const imagemin = require('gulp-imagemin');
+const rename = require("gulp-rename");
 
 gulp.task('process-sass', () => {
 	return gulp.src('src/scss/style.scss')
@@ -54,9 +55,24 @@ gulp.task('fontmanrope', () => {
 gulp.task('fonts', gulp.series(['fontawesome', 'fontmanrope']));
 
 gulp.task('images',  () => {
-	return gulp.src('./src/img/**/*')
-		.pipe(imagemin())
-		.pipe(gulp.dest('dist/img'));
+	let sizes = [1900, 1200, 992, 768];
+	let stream;
+
+	sizes.forEach(size => {
+		stream = gulp.src('./src/img/**/*')
+			.pipe(imageResize({
+				width : size,
+				upscale : false,
+				imageMagick: true
+			}))
+			.pipe(imagemin())
+			.pipe(rename({
+				suffix: "-" + size + 'w',
+			}))
+			.pipe(gulp.dest('dist/img'));
+	});
+
+	return stream;
 });
 
 gulp.task('default', () => {

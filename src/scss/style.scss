@@ -25,6 +25,11 @@ p:last-of-type{
 			object-fit: cover;
 			min-height: 100%;
 		}
+
+		&--square{
+			width: 100vw;
+			height: 100vw;
+		}
 	}
 }
 
