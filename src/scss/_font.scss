@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Manrope';
+	font-style: regular;
+	font-weight: 400;
+	src: url('./dist/fonts/manrope/complete/manrope-regular.eot');
+	src: url('./dist/fonts/manrope/complete/manrope-regular.eot?#iefix') format('embedded-opentype'),
+			 url('./dist/fonts/manrope/complete/manrope-regular.woff2') format('woff2'),
+			 url('./dist/fonts/manrope/complete/manrope-regular.woff') format('woff'),
+			 url('./dist/fonts/manrope/complete/manrope-regular.ttf')  format('truetype'),
+			 url('./dist/fonts/manrope/complete/manrope-regular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'Manrope';
+	font-style: medium;
+	font-weight: 500;
+	src: url('./dist/fonts/manrope/complete/manrope-medium.eot');
+	src: url('./dist/fonts/manrope/complete/manrope-medium.eot?#iefix') format('embedded-opentype'),
+			 url('./dist/fonts/manrope/complete/manrope-medium.woff2') format('woff2'),
+			 url('./dist/fonts/manrope/complete/manrope-medium.woff') format('woff'),
+			 url('./dist/fonts/manrope/complete/manrope-medium.ttf')  format('truetype'),
+			 url('./dist/fonts/manrope/complete/manrope-medium.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'Manrope';
+	font-style: semibold;
+	font-weight: 600;
+	src: url('./dist/fonts/manrope/complete/manrope-semibold.eot');
+	src: url('./dist/fonts/manrope/complete/manrope-semibold.eot?#iefix') format('embedded-opentype'),
+			 url('./dist/fonts/manrope/complete/manrope-semibold.woff2') format('woff2'),
+			 url('./dist/fonts/manrope/complete/manrope-semibold.woff') format('woff'),
+			 url('./dist/fonts/manrope/complete/manrope-semibold.ttf')  format('truetype'),
+			 url('./dist/fonts/manrope/complete/manrope-semibold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'Manrope';
+	font-style: bold;
+	font-weight: 700;
+	src: url('./dist/fonts/manrope/complete/manrope-bold.eot');
+	src: url('./dist/fonts/manrope/complete/manrope-bold.eot?#iefix') format('embedded-opentype'),
+			 url('./dist/fonts/manrope/complete/manrope-bold.woff2') format('woff2'),
+			 url('./dist/fonts/manrope/complete/manrope-bold.woff') format('woff'),
+			 url('./dist/fonts/manrope/complete/manrope-bold.ttf')  format('truetype'),
+			 url('./dist/fonts/manrope/complete/manrope-bold.svg#svgFontName') format('svg');
+}

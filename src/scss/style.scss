@@ -1,6 +1,7 @@
 @import './global_variables';
 @import './bootstrap/bootstrap';
 @import './fontawesome';
+@import './../../node_modules/tiny-slider/src/tiny-slider';
 
 p:last-of-type{
 	margin-bottom: 0;
@@ -33,5 +34,30 @@ p:last-of-type{
 		width: 5em;
 		height: 5em;
 		background-color: map-get($theme-colors, 'white');
+	}
+}
+
+.tns-nav{
+	margin-top: $spacer;
+	display: flex;
+	flex-direction: row;
+	gap: $spacer * .5;
+	justify-content: center;
+
+	button{
+		padding: 0;
+		height: .6em;
+		width: .6em;
+		border: none;
+		background-color: map-get($theme-colors, 'fourth');
+		border-radius: 50%;
+
+		&:hover{
+			background-color: $primary;
+		}
+	}
+
+	& > &-active{
+		background-color: map-get($theme-colors, 'primary');
 	}
 }

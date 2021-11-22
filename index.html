@@ -46,13 +46,16 @@
 		<div class="container">
 			<div class="row d-flex justify-content-center flex-md-row-reverse">
 				<picture class="col-md-6">
-					<img src="https://doodleipsum.com/1000/hand-drawn?i=f1882377f81704b2779449c08112cbce" alt="hero image" class="img-fluid">
+					<source media="(min-width: 768px)" srcset="./dist/img/hero-992w.png">
+					<source media="(min-width: 992px)" srcset="./dist/img/hero-1200w.png">
+					<source media="(min-width: 1400px)" srcset="./dist/img/hero-1900w.png">
+					<img src="./dist/img/hero-768w.png" alt="hero image" class="img-fluid">
 				</picture>
 				<div class="col-md-6 text-center text-md-start">
 					<h2 class="h1">
 						Consectetur nulla cupiditate nihil doloribus.
 					</h2>
-					<p class="fw-bolder">
+					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et eaque saepe consequuntur asperiores, quidem iusto illum doloribus odio, ex dignissimos aliquid.
 					</p>
 					<div class="d-flex justify-content-center justify-content-md-start gap-05 mt-1">
@@ -114,7 +117,10 @@
 				<div class="row d-flex flex-md-row-reverse">
 					<div class="col-md-5 offset-md-1 mb-2 mt-md-0">
 						<picture class="d-block h-100 position-relative section__img_wrapper">
-							 <img src="./src/img/smile.jpg" alt="smiling woman" class="img-fluid d-block section__img_wrapper__img">
+							<source media="(min-width: 768px)" srcset="./dist/img/smile-992w.jpg">
+							<source media="(min-width: 992px)" srcset="./dist/img/smile-1200w.jpg">
+							<source media="(min-width: 1400px)" srcset="./dist/img/smile-1900w.jpg">
+							 <img src="./dist/img/smile-768w.jpg" alt="smiling woman" class="img-fluid d-block section__img_wrapper__img">
 						</picture>
 					</div>
 					<article class="col-md-6">
@@ -144,7 +150,7 @@
 			</div>
 		</section>
 
-		<section class="bg-primary text-white py-4 banner mt-md-4">
+		<section class="bg-primary text-white py-4 banner mt-lg-4">
 			<div class="container">
 				<div class="row">
 					<div class="col">
@@ -160,9 +166,41 @@
 					</div>
 					<div class="col-md-4 position-relative d-none d-lg-block">
 						<picture class="banner__image-wrapper z-index-1">
-							<img src="./src/img/banner-lead.png" alt="banner lead" class="img-fluid position-absolute h-100 d-block">
+							<source media="(min-width: 768px)" srcset="./dist/img/banner-lead-992w.png">
+							<source media="(min-width: 992px)" srcset="./dist/img/banner-lead-1200w.png">
+							<source media="(min-width: 1400px)" srcset="./dist/img/banner-lead-1900w.png">
+							<img src="./dist/img/banner-lead-768w.png" alt="banner lead" class="img-fluid position-absolute h-100 d-block">
 						</picture>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white-1 text-primary text-center py-3">
+			<div class="container">
+				<div class="row">
+					<header class="col-md-8 mx-auto mb-2">
+						<h2 class="h2">
+							Check our references
+						</h2>
+					</header>
+				</div>
+				<div class="row my-slider">
+					<blockquote class="mb-0">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Nesciunt, eaque! Magnam, consectetur, neque voluptatem explicabo eveniet natus suscipit vitae quidem dolor officia totam omnis reprehenderit sed, dolore cumque, vel nesciunt.
+						</p>
+					</blockquote>
+					<blockquote class="mb-0">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sit quidem quis eveniet, ipsam, minus blanditiis accusantium adipisci cum provident praesentium dolor, asperiores reprehenderit nostrum omnis natus. Saepe, doloremque, adipisci!
+						</p>
+					</blockquote>
+					<blockquote class="mb-0">
+						<p>
+							Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Quam, dolorum, perspiciatis. Tempore obcaecati earum, aliquam, fugiat dolor iste alias reprehenderit consequatur corrupti quia quae ipsum quisquam delectus cum numquam mollitia.
+						</p>
+					</blockquote>
 				</div>
 			</div>
 		</section>
