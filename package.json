@@ -25,6 +25,7 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-uglify": "^3.0.2",
+		"gulp-webp": "^4.0.1",
 		"manrope": "^2.0.0",
 		"tiny-slider": "^2.9.4",
 		"webpack-stream": "^6.1.1"

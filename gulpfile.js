@@ -9,7 +9,8 @@ const babel = require('gulp-babel');
 const mode = require('gulp-mode')();
 const imageResize = require('gulp-image-resize');
 const imagemin = require('gulp-imagemin');
-const rename = require("gulp-rename");
+const rename = require('gulp-rename');
+const webp = require('gulp-webp');
 
 gulp.task('process-sass', () => {
 	return gulp.src('src/scss/style.scss')
@@ -65,6 +66,7 @@ gulp.task('images',  () => {
 				upscale : false,
 				imageMagick: true
 			}))
+			.pipe(webp())
 			.pipe(imagemin())
 			.pipe(rename({
 				suffix: "-" + size + 'w',
