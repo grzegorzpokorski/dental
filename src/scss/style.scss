@@ -1,0 +1,37 @@
+@import './global_variables';
+@import './bootstrap/bootstrap';
+@import './fontawesome';
+
+p:last-of-type{
+	margin-bottom: 0;
+}
+
+.banner{
+
+	&__image-wrapper{
+		position: absolute;
+		width: 100%;
+		height: calc(100% + 12em);
+		inset: 0;
+		top: -8em;
+	}
+}
+
+.section{
+	&__img_wrapper{
+
+		&__img{
+			object-fit: cover;
+			min-height: 100%;
+		}
+	}
+}
+
+.features{
+	&__icon{
+		display: inline-block;
+		width: 5em;
+		height: 5em;
+		background-color: map-get($theme-colors, 'white');
+	}
+}

@@ -1,0 +1,155 @@
+:root{
+	font-size: 16px;
+}
+
+// colors
+
+$primary: #204289;
+$secondary: #80d6f7;
+$third: #d5e6f7;
+$fourth: #8b9ec3;
+$gray: #333333;
+$white: #ffffff;
+$white-2: #f7fafd;
+$white-3: #eeeeee;
+$black: #000000;
+
+$theme-colors:();
+$theme-colors:(
+	'primary':		$primary,
+	'secondary':	$secondary,
+	'third':		$third,
+	'fourth':		$fourth,
+	'white':		$white,
+	'white-2':		$white-2,
+	'white-3':		$white-3,
+);
+
+// Options
+
+$enable-caret: true;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-hover-media-query: false; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes: true;
+$enable-print-styles: true;
+$enable-validation-icons: false;
+$enable-negative-margins: true;
+
+// Body
+
+$body-bg: $white;
+$body-color: $secondary;
+
+// Links
+
+$link-color: $body-color;
+$link-decoration: none;
+$link-hover-color: $link-color;
+$link-hover-decoration: underline;
+
+// fonts
+
+$font-family-sans-serif: 'Manrope', Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-weight-normal: 500;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * 0.875);
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.4;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base;
+
+$headings-font-weight: 700;
+$headings-line-height: 1.35;
+
+// Buttons + Forms
+
+$input-btn-font-size: $font-size-base;
+$input-btn-font-size-sm: $input-btn-font-size * .8;
+$input-btn-font-size-lg: $input-btn-font-size * 1.2;
+
+$input-btn-padding-y: .8em;
+$input-btn-padding-x: 1.5em;
+
+$input-btn-padding-y-sm: $input-btn-padding-y;
+$input-btn-padding-x-sm: $input-btn-padding-x;
+
+$input-btn-padding-y-lg: $input-btn-padding-y;
+$input-btn-padding-x-lg: $input-btn-padding-x;
+
+// Buttons
+
+$btn-font-size: $input-btn-font-size;
+
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+
+$btn-padding-y-sm: $input-btn-padding-y-sm;
+$btn-padding-x-sm: $input-btn-padding-x-sm;
+
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+$btn-padding-x-lg: $input-btn-padding-x-lg;
+
+$btn-font-weight: $font-weight-medium;
+$btn-box-shadow: inset 0 1px 0 rgba($white, 0.15), 0 1px 1px rgba($black, 0.075);
+
+$btn-border-radius: 0;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+
+$btn-disabled-opacity: 1;
+$btn-link-disabled-color: $gray;
+
+// spacers
+
+$spacer: 1rem;
+
+$spacers: (
+	'05': $spacer * .5,
+	0: 0,
+	1: $spacer * 1,
+	2: $spacer * 2,
+	3: $spacer * 3,
+	4: $spacer * 4,
+	5: $spacer * 5,
+	8: $spacer * 8,
+	75: $spacer * 7.5, 
+	10: $spacer * 10,
+) !default;
+
+// accordion
+
+$accordion-button-active-bg: $primary;
+$accordion-button-active-color: $white;
+
+// navbar
+
+$navbar-dark-color:                 rgba($white, .55);
+$navbar-dark-hover-color:           rgba($white, .75);
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color:  rgba($white, .1);
+
+$navbar-light-color:                rgba($primary, .55);
+$navbar-light-hover-color:          rgba($primary, .7);
+$navbar-light-active-color:         rgba($primary, .9);
+$navbar-light-disabled-color:       rgba($primary, .3);
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: rgba($primary, .1);
+
+$navbar-light-brand-color:                $navbar-light-active-color;
+$navbar-light-brand-hover-color:          $navbar-light-active-color;
+$navbar-dark-brand-color:                 $navbar-dark-active-color;
+$navbar-dark-brand-hover-color:           $navbar-dark-active-color;
