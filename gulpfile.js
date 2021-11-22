@@ -55,7 +55,7 @@ gulp.task('fontmanrope', () => {
 
 gulp.task('fonts', gulp.series(['fontawesome', 'fontmanrope']));
 
-gulp.task('images',  () => {
+gulp.task('images', () => {
 	let sizes = [1900, 1200, 992, 768];
 	let stream;
 
