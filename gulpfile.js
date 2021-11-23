@@ -11,6 +11,7 @@ const imageResize = require('gulp-image-resize');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 const webp = require('gulp-webp');
+const purgecss = require('gulp-purgecss')
 
 gulp.task('process-sass', () => {
 	return gulp.src('src/scss/style.scss')
@@ -23,6 +24,18 @@ gulp.task('process-sass', () => {
 		.pipe(mode.development(sourcemaps.write('./')))
 		.pipe(gulp.dest('dist/css'));
 });
+
+gulp.task('purgecss', () => {
+	return gulp.src('dist/css/*.css')
+		.pipe(purgecss({
+			content: ['index.html'],
+			safelist: {
+				standard: ['show'],
+				greedy:	[/tns-nav.*/, /colla.*/, /drop.*/]
+			}
+		}))
+		.pipe(gulp.dest('dist/css'))
+})
 
 gulp.task('process-js', () => {
 	return gulp.src('src/js/index.js')

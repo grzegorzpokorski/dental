@@ -42,6 +42,16 @@ p:last-of-type{
 	}
 }
 
+.services{
+	&__icon{
+		background-color: map-get($theme-colors, 'third');
+		line-height: 1.8em;
+		width: 1.8em;
+		text-align: center;
+		border-radius: 50%;
+	}
+}
+
 .post_preview{
 	
 	&__image_wrapper{
