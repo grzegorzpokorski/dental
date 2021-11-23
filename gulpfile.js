@@ -28,7 +28,7 @@ gulp.task('process-sass', () => {
 gulp.task('purgecss', () => {
 	return gulp.src('dist/css/*.css')
 		.pipe(purgecss({
-			content: ['index.html'],
+			content: ['*.html'],
 			safelist: {
 				standard: ['show'],
 				greedy:	[/tns-nav.*/, /colla.*/, /drop.*/]
@@ -107,12 +107,9 @@ gulp.task('default', () => {
 });
 
 gulp.task('build', gulp.series([
-	'process-sass',
-	'process-js',
 	'fonts',
+	'process-sass',
+	'purgecss',
+	'process-js',
 	'images'
 ]));
-
-gulp.task('check', () => {
-	console.log(mode);
-});

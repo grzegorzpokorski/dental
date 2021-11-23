@@ -71,7 +71,8 @@ $h5-font-size: $font-size-base * 1;
 $h6-font-size: $font-size-base;
 
 $headings-font-weight: 700;
-$headings-line-height: 1.35;
+$headings-line-height: 1.35em;
+
 
 // Buttons + Forms
 
@@ -119,6 +120,7 @@ $spacers: (
 	'05': $spacer * .5,
 	0: 0,
 	1: $spacer * 1,
+	15: $spacer *1.5,
 	2: $spacer * 2,
 	3: $spacer * 3,
 	4: $spacer * 4,
