@@ -42,6 +42,29 @@ p:last-of-type{
 	}
 }
 
+.post_preview{
+	
+	&__image_wrapper{
+		overflow: hidden;
+		width: 100%;
+		height: 12em;
+		background-color: map-get($theme-colors, 'secondary');
+	}
+
+	&__image{
+		object-fit: cover;
+		object-position: center center;
+		max-width: 100%;
+		height: auto;
+		min-height: 12em;
+		@include transition(all .35s);
+
+		&:hover{
+			transform: scale(1.2);
+		}
+	}
+}
+
 .tns-nav{
 	margin-top: $spacer;
 	display: flex;

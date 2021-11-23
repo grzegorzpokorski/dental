@@ -28,7 +28,7 @@ gulp.task('process-js', () => {
 	return gulp.src('src/js/index.js')
 		.pipe(webpack({
 			mode: mode.development() ? 'development' : 'production',
-			watch: true,
+			watch: (mode.development() == true) ? true : false,
 			output: {
 				filename: 'bundle.js'
 			}
@@ -91,4 +91,15 @@ gulp.task('default', () => {
 		gulp.series('process-js')
 	);
 
+});
+
+gulp.task('build', gulp.series([
+	'process-sass',
+	'process-js',
+	'fonts',
+	'images'
+]));
+
+gulp.task('check', () => {
+	console.log(mode);
 });
